@@ -92,7 +92,7 @@ Atomic clocks also disregard the Earth's rotation, so between 1958 when they
 were first calibrated and the POSIX epoch of 1970,
 L<UTC|https://en.wikipedia.org/wiki/Coordinated_Universal_Time> had fallen 10 seconds
 behind L<atomic-clock time|https://en.wikipedia.org/wiki/International_Atomic_Time>.
-The numerical value of C<Instant> happens to track atomic-clock time, and as of
+The numerical value of C<Instant> follows atomic-clock time, and as of
 2026 there have been 27 leap seconds recorded. This adds up to a total of 37
 seconds, which is why, as of 2026, the following holds:
 
