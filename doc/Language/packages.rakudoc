@@ -97,8 +97,8 @@ X«|Reference,MY (package)»X«|Reference,OUR (package)»X«|Reference,CORE (pac
 The following pseudo-package names are reserved at the front of a name:
 
 =begin table
-MY          Symbols in the current lexical scope (aka $?SCOPE)
-OUR         Symbols in the current package (aka $?PACKAGE)
+MY          Symbols in the current lexical scope
+OUR         Symbols in the current package
 CORE        Outermost lexical scope, definition of standard Raku
 GLOBAL      Interpreter-wide package symbols, really UNIT::GLOBAL
 PROCESS     Process-related globals (superglobals). The last place dynamic variable lookup will look.
