@@ -47,7 +47,7 @@ It is the inverse of L<method from-posix|#method from-posix>, except that the se
 value is C<True> if *and only if* this Instant is in a leap
 second.
 
-    say DateTime.new("2017-01-01T00:00:00Z").Instant.to-posix; # OUTPUT: «(1483228800 False)␤»
+    say DateTime.new('2017-01-01T00:00:00Z').Instant.to-posix; # OUTPUT: «(1483228800 False)␤»
     say DateTime.new('2016-12-31T23:59:60Z').Instant.to-posix; # OUTPUT: «(1483228800 True)␤»
 
 =head2 method Date
