@@ -89,7 +89,7 @@ C<DateTime.now.posix> does not change for two whole seconds.
     demo(3); # OUTPUT: «[2017-01-01T00:00:01Z 1483228801]␤»
 
 Atomic clocks also disregard the Earth's rotation, so between 1958 when they
-were first calibrated and the POSIX epoch of 1970,
+were first calibrated and the introduction of leap seconds in 1972,
 L<UTC|https://en.wikipedia.org/wiki/Coordinated_Universal_Time> had fallen 10 seconds
 behind L<atomic-clock time|https://en.wikipedia.org/wiki/International_Atomic_Time>.
 The numerical value of C<Instant> follows atomic-clock time, and as of
