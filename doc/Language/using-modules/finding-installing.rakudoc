@@ -34,6 +34,17 @@ will install the module with that particular name, if it is not already
 installed N<If it's installed, it will reinstall only if the version of
 the module is newer than the one installed>.
 
+Note that the name you provide to C<zef install> may be different from
+the name or names that you use in your `use` statements in Raku code.
+For example, C<zef install Digest> installs various hash functions.
+Writing C<use Digest> will give the error C<Could not find Digest>.
+Nonetheless, C<Digest> has been installed; you can now write
+for instance C<use Digest::SHA2> and then run C<sha256("hello")>.
+What you can C<use> after installing a distribution is specified
+by the C<provides> section of its C<META6.json>.
+The symbols that are thereby made available in your code
+are the ones that are I<exported> by the component that you C<use>.
+
 =head1 Finding installed modules
 
 It is up to the module installer to know where C<compunit> expects modules to be
